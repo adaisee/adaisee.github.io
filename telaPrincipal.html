@@ -12,12 +12,19 @@
     <style>
     body{
     background-image: url(img/fotoNatalina.jpeg);
+    height: 100vh
     }
     .form{
-    margin: 200px 400px 200px 400px;
-    width: 500px;
+    position: relative;
+    padding: 150px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: min-content;
     background-color: #B0E0E6;
     opacity: 0.9;
+    align-items: center;
+    border-radius: 30px;
     }
     .tit{
     font-size: 30px;
@@ -43,17 +50,17 @@
    <div class="form">
    <h2 class="tit">Login</h2>
    <form>
-  <div class="form-group">
+   <div class="form-group">
     <label for="exampleInputEmail1">Endereço de email</label>
     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email">
     <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
-  </div>
-  <div class="form-group">
+   </div>
+   <div class="form-group">
     <label for="exampleInputPassword1">Senha</label>
     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
-  </div>
+   </div>
   <button type="submit" class="btn btn-info">Enviar</button>
-</form>
+  </form>
 </div>
 
     <!-- JavaScript (Opcional) -->
