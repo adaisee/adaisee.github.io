@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Tela de Cadastro</title>
+      
+      <style>
+      *{
+      /*a tag margin está servindo para inserir um espaçamento externo ao elemento.*/
+      margin: 0;
+      /*a tag padding está servindo para definir um espaçamento interno entre o elemento e a borda.*/
+      padding: 0;
+      }
+      body{
+      /*a tag background está servindo para definir a cor de fundo da página.*/
+      background: #836FFF;
+      /*a tag height está servindo para definir o tamanho ocupado pelo elemento verticalmemte e vh é um
+      tipo de medida.*/
+      height: 100vh;
+      } 
+      .form{
+      /*a tag color está servindo para mudar a cor da letra no formulário.*/
+      color: #836FFF;
+      /*a tag width está servindo para definir a largura da área que o elemento irá ocupar.*/
+      width: min-content;
+      /*a tag position relative está servindo para definir a posição do elemento em relação a si mesmo.*/
+      position: relative;
+      /* a tag padding está servindo para definir um espaçamento interno entre o elemento e a borda.*/
+      padding: 150px;
+      /*a tag background está servindo para definir a cor de fundo do formulário.*/
+      background: pink;
+      /*a tag top está servindo para definir o espaço acima do elemento.*/
+      top: 50%;
+      /*a tag left está servindo para definir o alinhamento do elemento.*/
+      left: 50%;
+      /*a tag transform está servindo para ajudar no alinhamento do elemento.*/
+      transform: translate(-50%, -50%);
+      /*a tag border-radius está servindo para arredondar as bordas do formulário.*/
+      border-radius: 30px;
+      }
+      #titulo{
+      /*a tag font-size está servindo para definir o tamanho da letra do titulo.*/
+      font-size: 26px;
+      /*a tag font-family está servindo para definir a fonte da letra do titulo.*/
+      font-family: "Broadway", "Britanic Bold";
+      /*a tag margin-bottom está servindo para definir um espaçamento entre o titulo e os elementos do
+      formulário.*/
+      margin-bottom: 30px;
+      }
+      .input{
+      /*a tag margin está servindo para definir o espaçamento entre os label e os campos do formulário, em
+      todos os lados.*/
+      margin: 10px 10px 10px -5px;
+      /*a tag padding está servindo para definir um espaçamento interno entre o elemento e a borda.*/
+      padding: 5px;
+      }
+      #botao{
+      /*as tags de border estão servindo para definir a cor das bordas do botão.*/
+      border-top-color: #836FFF;
+      border-right-color: #836FFF;
+      border-left-color: #836FFF;
+      border-bottom-color: #836FFF;
+      /*a tag font-family está servindo para definir a fonte da letra da palavra do botão.*/
+      font-family: "Arial Black", Abadi;
+      /*a tag font-size está servindo para definir o tamanho da letra da palavra do botão.*/
+      font-size: 15px;
+      /*a tag color está servindo para definir a cor da letra da palavra do botão.*/
+      color: #836FFF;
+      /*a tag background está servindo para definir a cor de fundo do botão.*/
+      background: white;
+      }
+      /*a tag hover está servindo para definir que quando o usuário passar o mouse sobre o botão, ele
+      mude de cor.*/
+      #botao:hover{
+      /*a tag background está servindo para definir a cor do botão quando o usuário passar o mouse sobre ele.*/
+      background: pink;
+      }
+      label{
+      /*a tag font-size está servindo para definir o tamanho da letra dos label.*/
+      font-size: 15px;
+      /*a tag font-family está servindo para definir a fonte da letra dos label.*/
+      font-family: "Arial Black", Abadi;
+      }
+      </style>
+      
+      
+</head>
+<body>
+      
+      <!--  aqui é a parte do formulário, onde há as tags label, que estão servindo para colocarmos os textos,
+      e as tags inputs que são os campos.-->
+     <div class="form">
+     
+     <!--  a tag action, está servindo para colocarmos o link que será aberto ao clicarmos no botão, e a tag
+     onsubmit está servindo para retornar para a função de validação do forms.!-->
+     <!-- nas tags inputs, há a tag placeholder, que está servindo para colocarmos um nome dentro do campo. -->
+     <form action ="formPreferenciasDeDorama.html" id="formulario" onsubmit="return validateForm()">
+     <h1 id="titulo">Cadastre-se</h1>
+     <label for="nome">Nome:</label>
+     <input type="text" id="nome" name="nome" placeholder="Nome" ><br><br>
+     <label for="sobrenome">Sobrenome:</label>
+     <input type="text" id="sobrenome" name="sobre" placeholder="Sobrenome"><br><br>
+     <label for="email">Email:</label>
+     <input type="email" id="email" name="email" placeholder="Email"><br><br>
+     <label for="senha">Senha:</label>
+     <input type="type" id="senha" name="senha" placeholder="Senha"><br><br>
+     <input type="submit" value="Cadastrar" id="botao">
+     </form>
+     
+     <!-- aqui é a parte do script, onde foi colocada a função de validar os campos do formulário. -->
+     <script>
+     function validateForm(){
+    	 
+    	 /*aqui eu peguei os valores de cada campo.*/
+    	 var nome = document.getElementById("nome").value;
+    	 var sobrenome = document.getElementById("sobrenome").value;
+    	 var email = document.getElementById("email").value;
+    	 var senha = document.getElementById("senha").value;
+    	 
+    	 /*aqui os if estão analisando se o campo está vazio, se estiver, ao apertar o botão, aparecerá
+    	 a msg do alert.*/
+    	 if(nome ===""){
+    		 alert("Preencha todos os campos.");
+    		 return false;
+    	 }
+    	 if(sobrenome ===""){
+    		 alert("Preencha todos os campos.");
+    		 return false;
+    	 }
+    	 if(email ===""){
+    		 alert("Preencha todos os campos.");
+    		 return false;
+    	 }
+    	 if(senha ===""){
+    		 alert("Preencha todos os campos.");
+    		 return false;
+    		 
+    	/*caso os campos estiverem todos preenchidos, o formulário será enviado.*/
+    	 } else {
+    		 return true;
+    	 }
+     }
+     </script>
+     </div>
+
+</body>
+</html>
