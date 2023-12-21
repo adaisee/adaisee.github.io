@@ -11,64 +11,99 @@
     
     <style>
     *{
+    /*a tag margin está servindo para inserir um espaçamento externo ao elemento.*/
     margin: 0;
+    /*a tag padding está servindo para definir um espaçamento interno entre o elemento e a borda.*/
     padding: 0;
     }
     body{
+    /*a tag background-image está servindo para definir a imagem de plano de fundo.*/
     background-image: url("img/f1Natal.jpg");
+    /*a tag background-repeat está servindo para definir se a imagem irá se repetir ou não, nesse caso, não 
+    irá se repetir.*/
     background-repeat: no-repeat;
+    /*a tag background-size está servindo para definir o tamanho da imagem de plano de fundo.*/
     background-size: 1500px;
+    /*a tag width está servindo para determinar a largura da área de conteúdo do elemento.*/
     width: 70%;
+    /*a tag heigth está servindo para definir o tamanho vertical ocupado pelo elemento na tela do navegador.*/
     height: 100vh;
     }
     .form{
-      width: min-content;
-      position: relative;
-      padding: 150px;
-      top: 40%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      border-radius: 30px;
-      align-items: center;
+    /*a tag width está servindo para determinar a largura da área de conteúdo do elemento.*/
+    width: min-content;
+    /*a tag position relative está servindo para definir a posição do elemento em relação a si mesmo.*/
+    position: relative;
+    /* a tag padding está servindo para definir um espaçamento interno entre o elemento e a borda.*/
+    padding: 150px;
+    /*a tag top está servindo para definir o espaço acima do elemento.*/
+    top: 40%;
+    /*a tag left está servindo para definir o alinhamento do elemento.*/
+    left: 50%;
+    /*a tag transform está servindo para ajudar no alinhamento do elemento.*/
+    transform: translate(-50%, -50%);
+    /*a tag border-radius está servindo para arredondar as bordas do formulário.*/
+    border-radius: 30px;
+    /*a tag align-items está servindo para controlar o alinhamento de todos os itens no eixo transversal.*/
+    align-items: center;
     }
     form{
+    /*a tag width está servindo para determinar a largura da área de conteúdo do elemento.*/
     width: 500px;
     }
     #inp{
+    /*a tag border-radius está servindo para arredondar as bordas dos inputs.*/
     border-radius: 30px;
     }
     label{
+    /*a tag color está servindo para mudar a cor da letra dos label.*/
     color: white;
+    /*a tag margin está servindo para inserir um espaçamento externo ao elemento.*/
     margin: 20px 0px 0px;
     }
     #b{
+    /*a tag width está servindo para determinar a largura da área de conteúdo do elemento.*/
     width: 250px;
+    /*a tag border-radius está servindo para arredondar as bordas do botão.*/
     border-radius: 30px;
+    /*a tag margin está servindo para inserir um espaçamento externo ao elemento.*/
     margin: 10px 100px 0px 100px;
     }
     #small{
+    /*a tag color está servindo para mudar a cor da letra dos small.*/
     color: white;
+    /*a tag font-family está servindo para definir a fonte da letra dos small*/
     font-family: "Arial Black";
     }
     h1{
+    /*a tag color está servindo para mudar a cor da letra do título.*/
     color: white;
+    /*a tag font-family está servindo para definir a fonte da letra do título.*/
     font-family: "Broadway", Arial;
+    /*a tag text-align está servindo para centralizar as palavras do título.*/
     text-align: center;
+    /*a tag margin está servindo para inserir um espaçamento externo ao elemento.*/
     margin: 20px;
     }
     h3{
+    /*a tag color está servindo para mudar a cor da letra do h3.*/
     color: white;
+    /*a tag font-family está servindo para definir a fonte da letra do h3.*/
     font-family: "Arial Black", Arial;
+    /*a tag font-size está servindo para definir o tamanho da letra do h3.*/
     font-size: 15px;
+    /*a tag text-align está servindo para centralizar as palavras do h3.*/
     text-align: center;
     }
     </style>
     
+    <!-- aqui é a parte do script. -->
     <script>
     function confirmacao(){
-    	  alert("O login não é obrigatório, mas após conhecer o site, e se gostar, e quiser receber atualizações sobre ele, será necessário fazer login.");
-      }
-      </script>
+    alert("O login não é obrigatório, mas após conhecer o site, e se gostar, e quiser receber atualizações sobre ele, será necessário fazer login.");
+    }
+    </script>
+    
     </head>
     <body onload="confirmacao()">
     
